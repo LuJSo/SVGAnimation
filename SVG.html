@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="SVG.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Run</title>
+  </head>
+  <body>
+    <svg width="80%" viewBox="0 0 200 100"">
+  <image x="10" y="50" width="20" height="20" xlink:href="http://www.sebastien-laframboise.com/wp-content/uploads/twiz-landing-ufo.png">
+  <animate id="one" attributeName="x" from="10" to="30" dur="2s" begin="click" fill="freeze"/>
+<animate id="six" attributeName="y" from="50" to="80" dur="2.5s" begin="10s" fill="freeze"/>
+</image>
+
+
+  <image x="210" y="50" width="20" height="20" xlink:href="http://wftogame.com/wp-content/uploads/ShadowBig1.png">
+  <animate id="two" attributeName="x" from="210" to="180" dur="2s" begin="one.end" fill="freeze"/>
+  <animate id="five" attributeName="y" from="50" to="80" dur="2.5s" begin="7s" fill="freeze"/>
+</image>
+
+   <rect x="-10" y="60" fill="red" width="10" height="2">
+       <animate id="three" attributeName="x" from="30" to="200" dur="4s" begin="6s" fill="freeze"/>
+         <animate id="four" attributeName="opacity" from="1" to="0" dur="1s" begin="three.end" fill="freeze">
+         </rect>
+</svg>
+  </body>
+</html>
