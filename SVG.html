@@ -4,25 +4,83 @@
     <link rel="stylesheet" href="SVG.css">
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <meta charset="utf-8">
-    <title>Run</title>
+    <title>Space Wars</title>
+    <p>Planet Earth's recent technologcial innovations have made way for advanced space travel, A Space craft has been sent to discover a new galaxy only to encounter an alien space creature....</p>
+    <p> CLICK ON THE SPACE SHIP TO BEGIN STORY </p>
   </head>
   <body>
-    <svg width="80%" viewBox="0 0 200 100"">
-  <image x="10" y="50" width="20" height="20" xlink:href="http://www.sebastien-laframboise.com/wp-content/uploads/twiz-landing-ufo.png">
+    <svg width="100%" viewBox="0 0 200 100">
+      <image x="10" y="50" width="20" height="20" xlink:href="http://www.sebastien-laframboise.com/wp-content/uploads/twiz-landing-ufo.png">
   <animate id="one" attributeName="x" from="10" to="30" dur="2s" begin="click" fill="freeze"/>
-<animate id="six" attributeName="y" from="50" to="80" dur="2.5s" begin="10s" fill="freeze"/>
+<animate id="six" attributeName="y" from="50" to="80" dur="2.5s" begin="five.end" fill="freeze"/>
+<animate id="ten" attributeName="y" from="80" to="30" dur="2.5s" begin="nine.end" fill="freeze"/>
+<animate id="sixteen" attributeName="x" from="30" to="200" dur="4s" begin="fifteen.end" fill="freeze"/>
+  <animate id="seventeen" attributeName="opacity" from="1" to="0" dur="1s" begin="sixteen.end" fill="freeze"/>
 </image>
 
 
   <image x="210" y="50" width="20" height="20" xlink:href="http://wftogame.com/wp-content/uploads/ShadowBig1.png">
   <animate id="two" attributeName="x" from="210" to="180" dur="2s" begin="one.end" fill="freeze"/>
-  <animate id="five" attributeName="y" from="50" to="80" dur="2.5s" begin="7s" fill="freeze"/>
+  <animate id="five" attributeName="y" from="50" to="80" dur="4s" begin="two.end" fill="freeze"/>
+    <animate id="nine" attributeName="y" from="80" to="30" dur="4s" begin="six.end" fill="freeze"/>
+      <animate id="nine" attributeName="x" from="180" to="100" dur="2s" begin="ten.end" fill="freeze"/>
+      <animate id="thirteen" attributeName="opacity" from="1" to="0" dur="1s" begin="eleven.end" fill="freeze"/>
 </image>
 
    <rect x="-10" y="60" fill="red" width="10" height="2">
-       <animate id="three" attributeName="x" from="30" to="200" dur="4s" begin="6s" fill="freeze"/>
-         <animate id="four" attributeName="opacity" from="1" to="0" dur="1s" begin="three.end" fill="freeze">
+       <animate id="three" attributeName="x" from="30" to="200" dur="4s" begin="two.end" fill="freeze"/>
+         <animate id="four" attributeName="opacity" from="1" to="0" dur="1s" begin="three.end" fill="freeze"/>
          </rect>
-</svg>
-  </body>
-</html>
+
+        <circle cx="-10" cy="90" r="5" fill="red">
+            <animate id="seven" attributeName="cx" from="30" to="210" dur="4s" begin="six.end" fill="freeze"/>
+            <animate id="eight" attributeName="opacity" from="1" to="0" dur="1s" begin="seven.end" fill="freeze"/>
+          </circle>
+
+           <ellipse cx="-10" cy="40" rx="10" ry="5" fill="red">
+             <animate id="eleven" attributeName="cx" from="40" to="100" dur="2s" begin="ten.end" fill="freeze"/>
+             <animate id="twelve" attributeName="opacity" from="1" to="0" dur="1s" begin="eleven.end" fill="freeze"/>
+           </ellipse>
+
+           <image x="-20" y="30" width="20" height="20" xlink:href="http://cdn.wallpapersafari.com/7/31/PI450Q.png">
+              <animate id="fourteen" attributeName="x" from="100" to="100" dur="1s" begin="twelve.end" fill="freeze"/>
+              <animate id="fifteen" attributeName="opacity" from="1" to="0" dur="1s" begin="fourteen.end" fill="freeze"/>
+           </image>
+
+           <polygon points="1 5 3 15 3 7" fill="yellow">
+             <animate id="invis" attributeName="opacity" from="1" to="0" dur="3s" begin="0s; invis2.end"/>
+             <animate id="invis2" attributeName="opacity" from="0" to="1" dur="3s" begin="invis.end"/>
+           </polygon>
+
+                  <rect x="6" y="90" fill="yellow" width="3" height="3">
+                    <animate id="square1" attributeName="y" from="90" to="80" dur="2s" begin="0s; square2.end"/>
+                    <animate id="square2" attributeName="y" from="80" to="90" dur="2s" begin="square1.end"/>
+                  </rect>
+
+                    <circle cx="130" cy="10" r="1.5" fill="yellow">
+                      <animate id="circle1" attributeName="cx" from="130" to="110" dur="2s" begin="0s; circle2.end"/>
+                        <animate id="circle2" attributeName="cx" from="110" to="130" dur="2s" begin="circle1.end"/>
+                    </circle>
+
+                    <image x="90" y="90" width="4" height="4" xlink:href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Star_red.svg/812px-Star_red.svg.png">
+                    <animate id="star1" attributeName="x" from="90" to="75" dur="2s" begin="0s; star4.end" fill="freeze"/>
+                      <animate id="star2" attributeName="y" from="90" to="82" dur="2s" begin="star1.end" fill="freeze"/>
+                      <animate id="star3" attributeName="x" from="75" to="90" dur="2s" begin="star2.end" fill="freeze"/>
+                      <animate id="star4" attributeName="y" from="82" to="90" dur="2s" begin="star3.end" fill="freeze"/>
+                    </image>
+
+                     <ellipse cx="195" cy="9" rx="2" ry="5" fill="green">
+                        <animate id="hover" attributeName="cy" from="9" to="90" dur="4s" begin="mouseover" />
+                      <animate attributeName="cy" from="90" to="9" dur="4s" begin="hover.end" fill="freeze"/>
+                     </ellipse>
+
+                     <polygon points="20 50 20 50 25 45 35 45" fill="purple">
+                       <animate attributeName="points" from="20 50 20 50 25 45 35 45" to="40 70 40 70 45 65 55 65" dur="4s" begin="click" fill="freeze"/>
+                     </polygon>
+
+                     <rect x="60" y="15" fill="blue" width="9" height="3">
+                        <animate attributeName="y" from="15" to="90" dur="4s" begin="click" fill="freeze" />
+                     </rect>
+                     </svg>
+                   </body>
+                   </html>
